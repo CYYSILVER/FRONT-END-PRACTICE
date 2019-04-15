@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+        .flex-container {
+            padding: 0px;
+            margin: 0px;
+            list-style: none;
+            display: flex;
+            flex-flow: row wrap;
+            list-style: none;
+            justify-content: space-around;
+            align-items: baseline;
+        }
+
+        .flex-item {
+            background-color: tomato;
+            width: 200px;
+            height: 150px;
+            padding: 5px;
+            margin-top: 10px;
+            color: white;
+            line-height: 150px;
+            font-size: 3em;
+            text-align: center;
+            /* display: flex; */
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="flex-container">
+        <li style="height:300px" class="flex-item">1</li>
+        <li style="align-self: flex-end; " class="flex-item">2</li>
+        <li class="flex-item">
+            <div>3</div>
+        </li>
+        <li class="flex-item">4</li>
+        <li class="flex-item">5</li>
+        <li class="flex-item">6</li>
+    </ul>
+    <!-- <style>
+        li.disp {
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+            background: tomato;
+            color: white;
+            font-size: 1em;
+            
+        }
+    </style>
+    <li class="disp">display:table-cell and vertical-align:center</li> -->
+</body>
+
+</html>

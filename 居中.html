@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+   
+</head>
+
+<body>
+    <style>
+        .lOuter {
+            border: 1px solid red;
+            width: 200px;
+            height: 200px;
+            position: relative;
+        }
+
+        .lInner {
+            border: 1px solid blue;
+            /* width:20px; */
+            height: 20px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+    <!-- 使用绝对定位+transform -->
+    <div class="lOuter">
+        <div class="lInner">Hello World</div>
+    </div>
+
+
+    <style>
+            .outer {
+                display: flex;
+                width: 200px;
+                height: 200px;
+                border: 1px solid hotpink;
+                /* align-content: stretch;
+            justify-content: center; */
+            }
+    
+            .inner {
+                margin: auto;
+                border: 1px solid rebeccapurple;
+                /* width: 20px; */
+                height: 20px;
+            }
+    
+            .gridOuter {
+                border: 1px solid red;
+                width: 200px;
+                height: 200px;
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr;
+                align-items: center;
+                justify-items: center;
+    
+            }
+    
+            .gridInner {
+                border: 1px solid rgb(17, 0, 255);
+                /* width: 20px; */
+                height: 20px;
+            }
+        </style>
+    <!-- 使用flex -->
+    <div class="outer">
+        <div class="inner">Hello World</div>
+    </div>
+    <!-- 使用grid -->
+    <div class="gridOuter">
+        <div class="gridInner">Hello World</div>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Document</title>
+    <style>
+    #arrow {
+        width: 0; 
+        height: 0;
+        border-width: 100px;
+        border-style: solid;
+        border-color:transparent;
+        border-top-color: rgb(137, 168, 255);
+        animation:rotate 3s linear infinite;
+        animation-timing-function: linear;
+        transform-origin:100px 50px;
+    }
+
+    @keyframes rotate{
+        from {
+            transform:rotate(0deg);
+        }
+        to {
+            transform:rotate(360deg);
+        }
+    }
+
+    </style>
+</head>
+<body>
+    <div id="arrow"></div>
+</body>
+</html>

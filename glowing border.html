@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+    [debug], [debug] *:not(g):not(path) {
+        color:                 hsla(210, 100%, 100%, 0.9) !important;
+        background:            hsla(210, 100%,  50%, 0.4) !important;
+        outline: solid 1px hsla(210, 100%, 100%, 0.5) !important;
+
+        box-shadow: none !important;
+        filter:     none !important;
+    }
+
+    body {
+        margin:0;
+        padding:0;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        background:#060c21;
+        min-height:100vh;
+    }
+
+    .container {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        position:relative;
+        background:#060c21;
+        height:400px;
+        width:320px;
+    }
+
+    .container:before {
+        content:"";
+        position:absolute;
+        top:-2px;
+        left:-2px;
+        right:-2px;
+        bottom:-2px;
+        background-color:white;
+        z-index:-1;
+    }
+
+    .container:after {
+        content:"";
+        position:absolute;
+        top:-2px;
+        left:-2px;
+        right:-2px;
+        bottom:-2px;
+        background-color:white;
+        z-index:-1;
+        filter:blur(15px)
+    }
+
+    .container:before,
+    .container:after {
+       background: linear-gradient(235deg,#89ff00, #060c21, #00bcd4);
+    }
+
+    .details {
+        color:white;
+        display:flex;
+        flex-flow:column;
+        justify-content: center;
+        align-items: center;
+        padding:30px;
+    }
+    
+    </style>
+</head>
+<body>
+    <div  class="container">
+        <div class="details">
+            <h1>Glowing Border</h1>
+            <p>Hello This is a Growing Borderssssssssssssssssssssssssssss
+            </p>
+
+        </div>
+
+    </div>
+</body>
+</html>

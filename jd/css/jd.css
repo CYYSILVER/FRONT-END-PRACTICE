@@ -1,0 +1,212 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+body {
+    font:12px/1.5 Microsoft YaHei,tahoma,arial,Hiragino Sans GB,\\5b8b体,sans-serif;
+    color:black;
+    background:#f0f3ef
+
+}
+
+
+.w {
+    width:1190px;
+    margin:auto;
+    position: relative;
+}
+
+/* 顶部导航栏 */
+#shortcut {
+    background-color:#e3e4e5;
+    border-bottom:1px solid #ddd;
+}
+
+#topnav {
+    height:30px;
+    color:#999;
+    margin:auto;
+    display:flex;
+    flex-flow:row nowrap;
+}
+
+
+
+#topnav .fl {
+    flex:1 0;
+    margin:auto;
+    margin-left:160px;
+    text-align: right;
+}
+
+#topnav .fr {
+    flex:8 0;
+    margin-left:200px;
+    text-align: right;
+    list-style: none;
+
+    
+}
+
+#topnav .fr li:not(.spacer) {
+    list-style: none;
+    display: inline-block;
+    line-height:30px;
+    margin-left:0 10px;
+
+    position: relative;
+    padding:0 5px;
+    
+    
+  
+
+}
+
+#topnav .fr li.spacer {
+    list-style:none;
+    display:inline-block;
+    margin:11px 5px 0;
+    background-color:#ccc;
+    width:1px;
+    height:10px;
+    line-height:30px;
+}
+
+#myjd:hover {
+    background:#fff;
+    border:1px solid #ccc;
+    position:relative;
+    color:red;
+}
+
+
+#myjd .dropdown-layer {
+    position:absolute;
+    left:-1px; 
+    width:280px;
+    text-align: left;
+    border:1px solid #ccc;
+    display: none;
+    background:#fff;
+    z-index:10;
+}
+
+#myjd .dropdown-layer a{
+    text-decoration: none;
+    color:#999;
+}
+
+#myjd:hover .dropdown-layer{
+    display: block;
+    
+}
+
+
+
+.myjdlist {
+    padding:10px 0 10px 15px;
+    overflow:hidden;
+}
+
+.myjdlist>*{
+    float:left;
+    width:126px;
+}
+
+.myjdlist{
+    border-bottom:1px solid #eee;
+}
+
+
+
+.header #search {
+    font-size: 0px;
+    margin:auto;
+    text-align: center;
+    vertical-align: top;
+}
+
+.header img#jdlogo {
+    position:absolute;
+    top:-32px;
+    left:0px;
+    box-shadow: 0px -12px 10px rgba(0,0,0,0.2);
+}
+
+#search input {
+    box-sizing: border-box;
+    margin:25px -2px 0px 0px;
+    width:390px;
+    height:35px;
+    padding:4px 44px 4px 4px;
+    vertical-align: top;
+    outline:none;
+    font-size:16px;
+}
+
+#search button {
+    background: red;
+    height:35px;
+    width:50px;
+    outline:none;
+    border:none;
+    margin:25px 0px 5px 0px;
+    cursor: pointer;
+}
+#hotwords {
+    text-align: center;
+}
+
+#hotwords a {
+    margin:0 10px;
+    text-decoration: none;
+    color:#777;
+}
+
+#settleup {
+    position: absolute;
+    top:25px;
+    right:150px;
+    width:190px;
+    
+   
+}
+
+#settleup .cw-icon {
+    position: relative;
+    text-align: center;
+    line-height: 33px;
+    background:white;
+    border: 1px solid #e3e4e5;
+    z-index: 2;
+    
+}
+
+#settleup .cw-icon a{
+    text-decoration: none;
+    color:#777;
+  
+}
+
+#settleup .dropdown-layer {
+    display: none;
+    position: absolute;
+    background:white;
+    border: 1px solid #e3e4e5;
+    right:0px;
+    transform: translate(0,-1px);
+    padding:25px;
+    width:280px;
+    z-index: 1;
+}   
+
+#settleup:hover .dropdown-layer {
+    display: block;
+}
+
+#settleup:hover .cw-icon{
+    border-bottom: 1px solid white;
+    /* background:red; */
+   
+}

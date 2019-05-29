@@ -21,7 +21,7 @@
         display:flex;
         justify-content: center;
         align-items: center;
-        background:#060c21;
+        background:#f0d0ee;
         min-height:100vh;
     }
 
@@ -30,9 +30,8 @@
         justify-content: center;
         align-items: center;
         position:relative;
-        background:#060c21;
-        height:400px;
-        width:320px;
+        background:#ffeaff;
+       
     }
 
     .container:before {
@@ -60,29 +59,36 @@
 
     .container:before,
     .container:after {
-       background: linear-gradient(235deg,#89ff00, #060c21, #00bcd4);
+       background: linear-gradient(235deg,#d4ffa2, #f956ff, #6aeeff);
     }
 
     .details {
-        color:white;
+        z-index: 0;
+        color:rgb(0, 0, 0);
         display:flex;
         flex-flow:column;
         justify-content: center;
         align-items: center;
-        padding:30px;
     }
     
+    .details p, .details h1 {
+        margin:10px;
+    }
+
+    .details img {
+        width:300px;
+    }
+
     </style>
 </head>
 <body>
-    <div  class="container">
+    <div  class="container"> 
         <div class="details">
-            <h1>Glowing Border</h1>
-            <p>Hello This is a Growing Borderssssssssssssssssssssssssssss
-            </p>
-
+            <img src="meimei.jpg" alt="agd" />
+           <div>hello world
+               
+           </div>
         </div>
-
     </div>
 </body>
 </html>

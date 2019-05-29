@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+      #middle {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      .menu {
+        border-radius: 8px;
+        overflow: hidden;
+      }
+      .menu * {
+        text-decoration: none;
+        list-style: none;
+      }
+
+      .item {
+        border-top: 1px solid#4ab9fa;
+      }
+
+      .btn {
+        background: #4ab9fa;
+        min-width: 250px;
+        cursor: pointer;
+      }
+
+      .btn *{
+        display: inline-block;
+        color: white;
+        padding: 15px 5px;
+      }
+
+      .btn *:first-child {
+        padding-left: 20px;
+      }
+
+      .submenu {
+        background: #35373b;
+        overflow: hidden;
+        transition: max-height 0.3s;
+        max-height: 0;
+      }
+
+      .submenu a {
+        display: block;
+        position: relative;
+        color: white;
+        padding: 16px 26px;
+        /* margin:4px 0; */
+        font-size: 14 px;
+      }
+
+      .submenu a:not(:last-child) {
+        border-bottom: 1px solid #165b70;
+      }
+
+      .submenu a:before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0px;
+        top: 8%;
+        width: 6px;
+        height: 84%;
+        background: #5fc4ff;
+        transition: 0.3s;
+        opacity: 0;
+      }
+
+      .submenu a:hover:before {
+        opacity: 1;
+      }
+
+      /* .item:target .submenu {
+        max-height: 10em;
+      } */
+    </style>
+  </head>
+  <body>
+    <div id="middle">
+      <div class="menu">
+        <ul>
+          <li class="item" id="profile">
+            <div class="btn"><i class="far fa-user"></i><a href="#profile">Content 1</a></div>
+            <div class="submenu">
+              <a href="#">content item</a>
+              <a href="#">content item</a>
+            </div>
+          </li>
+          <li class="item" id="message">
+            <div class="btn"><i class="far fa-user"></i><a href="#message">Content 2</a></div>
+            <div class="submenu">
+              <a href="#">content item</a>
+              <a href="#">content item</a>
+            </div>
+          </li>
+          <li class="item" id="settings">
+            <div class="btn"><i class="far fa-user"></i><a href="#settings">Content 3</a></div>
+            <div class="submenu">
+              <a href="#">content item</a>
+              <a href="#">content item</a>
+              <div></div>
+            </div>
+          </li>
+          <li class="item" id="others">
+            <div class="btn"><i class="far fa-user"></i><a href="#others">Content 4</a></div>
+            <div class="submenu">
+              <a href="#">content item</a>
+              <a href="#">content item</a>
+              <a href="#">content item</a>
+              <a href="#">content item</a>
+            </div>
+          </li>
+          <li class="item" id="log-out">
+            <div class="btn"><i class="far fa-user"></i><a href="#">Log Out</a></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  const btn = document.querySelectorAll('.item .btn')
+  btn.forEach(item => {
+    let opened = false
+    item.addEventListener('click', () => {
+
+        if (item.nextElementSibling) {
+          if (opened) {
+            item.nextElementSibling.style['max-height'] = '0'
+          } else {
+            item.nextElementSibling.style['max-height'] = '10em'
+          }
+          opened = !opened
+        }
+
+    })
+  })
+</script>

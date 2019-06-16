@@ -26,15 +26,17 @@
       .menu * {
         text-decoration: none;
         list-style: none;
+        /* display: flex; */
       }
 
       .item {
         border-top: 1px solid#4ab9fa;
+        
       }
 
       .btn {
         background: #4ab9fa;
-        min-width: 250px;
+        min-width: 300px;
         cursor: pointer;
       }
 
@@ -85,8 +87,14 @@
         opacity: 1;
       }
 
+      .item:target .submenu {
+        max-height: 10em;
+      }
+
+      
       /* .item:target .submenu {
         max-height: 10em;
+        overflow: scroll;
       } */
     </style>
   </head>
@@ -121,7 +129,7 @@
             <div class="submenu">
               <a href="#">content item</a>
               <a href="#">content item</a>
-              <a href="#">content item</a>
+             
               <a href="#">content item</a>
             </div>
           </li>
@@ -134,20 +142,20 @@
   </body>
 </html>
 <script>
-  const btn = document.querySelectorAll('.item .btn')
-  btn.forEach(item => {
-    let opened = false
-    item.addEventListener('click', () => {
+  // const btn = document.querySelectorAll('.item .btn')
+  // btn.forEach(item => {
+  //   let opened = false
+  //   item.addEventListener('click', () => {
 
-        if (item.nextElementSibling) {
-          if (opened) {
-            item.nextElementSibling.style['max-height'] = '0'
-          } else {
-            item.nextElementSibling.style['max-height'] = '10em'
-          }
-          opened = !opened
-        }
+  //       if (item.nextElementSibling) {
+  //         if (opened) {
+  //           item.nextElementSibling.style['max-height'] = '0'
+  //         } else {
+  //           item.nextElementSibling.style['max-height'] = '10em'
+  //         }
+  //         opened = !opened
+  //       }
 
-    })
-  })
+  //   })
+  // })
 </script>

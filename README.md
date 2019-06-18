@@ -11,5 +11,5 @@ transform: rotate(-30deg) skew(25deg) scale(.8);
 
 # Thanos Snap Disperison
 ## 2019/6/18
-灭霸响指消失特效（有点low）
+灭霸响指消失特效（有点low）   
 ![effect](./images/thanos-dispersion.png "变成灰")

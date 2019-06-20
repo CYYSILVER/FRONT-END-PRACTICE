@@ -12,4 +12,11 @@ transform: rotate(-30deg) skew(25deg) scale(.8);
 # Thanos Snap Disperison
 ## 2019/6/18
 灭霸响指消失特效（有点low）   
+
+```
+原理就是使用一张noise.png的噪点图覆盖原图
+```
+
 ![effect](./images/thanos-dispersion.png "变成灰")
+
+

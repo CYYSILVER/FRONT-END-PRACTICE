@@ -1,94 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
     <style>
-    [debug], [debug] *:not(g):not(path) {
-        color:                 hsla(210, 100%, 100%, 0.9) !important;
-        background:            hsla(210, 100%,  50%, 0.4) !important;
+      [debug],
+      [debug] *:not(g):not(path) {
+        color: hsla(210, 100%, 100%, 0.9) !important;
+        background: hsla(210, 100%, 50%, 0.4) !important;
         outline: solid 1px hsla(210, 100%, 100%, 0.5) !important;
 
         box-shadow: none !important;
-        filter:     none !important;
-    }
+        filter: none !important;
+      }
 
-    body {
-        margin:0;
-        padding:0;
-        display:flex;
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
         justify-content: center;
         align-items: center;
-        background:#f0d0ee;
-        min-height:100vh;
-    }
+        background: #1b1b1b;
+        min-height: 100vh;
+      }
 
-    .container {
-        display:flex;
+      .container {
+        display: flex;
         justify-content: center;
         align-items: center;
-        position:relative;
-        background:#ffeaff;
-       
-    }
+        position: relative;
+        background: #1d1d1d;
+      }
 
-    .container:before {
-        content:"";
-        position:absolute;
-        top:-2px;
-        left:-2px;
-        right:-2px;
-        bottom:-2px;
-        background-color:white;
-        z-index:-1;
-    }
+      .container:before {
+        content: '';
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        right: -2px;
+        bottom: -2px;
+        background-color: white;
+        z-index: -1;
+      }
 
-    .container:after {
-        content:"";
-        position:absolute;
-        top:-2px;
-        left:-2px;
-        right:-2px;
-        bottom:-2px;
-        background-color:white;
-        z-index:-1;
-        filter:blur(15px)
-    }
+      .container:after {
+        content: '';
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        right: -2px;
+        bottom: -2px;
+        background-color: white;
+        z-index: -1;
+        filter: blur(15px);
+      }
 
-    .container:before,
-    .container:after {
-       background: linear-gradient(235deg,#d4ffa2, #f956ff, #6aeeff);
-    }
+      .container:before,
+      .container:after {
+        background: linear-gradient(235deg, #d4ffa2, #f956ff, #6aeeff);
+      }
 
-    .details {
+      .details {
         z-index: 0;
-        color:rgb(0, 0, 0);
-        display:flex;
-        flex-flow:column;
+        color: rgb(255, 255, 255);
+        display: flex;
+        flex-flow: column;
         justify-content: center;
         align-items: center;
-    }
-    
-    .details p, .details h1 {
-        margin:10px;
-    }
+        line-height: 100px;
+      }
 
-    .details img {
-        width:300px;
-    }
+      .details p,
+      .details h1 {
+        margin: 50px;
+      }
 
+      .details img {
+        width: 1000px;
+      }
     </style>
-</head>
-<body>
-    <div  class="container"> 
-        <div class="details">
-            <img src="meimei.jpg" alt="agd" />
-           <div>hello world
-               
-           </div>
-        </div>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="details">
+        <img src="res/Glowing Border/10.jpg" alt="agd" />
+        <div>hello world</div>
+      </div>
     </div>
-</body>
+  </body>
 </html>

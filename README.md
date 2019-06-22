@@ -27,7 +27,7 @@ nav .menu a i:before {
     width 0.2s linear 0s, line-height 0.2s linear 0s;
 }
 ```
-<img src="images/horizontal menu.png" width="100%" />
+<img src="images/Horizontal Menu.png" width="100%" />
 
 
 # 7 Responsive Design

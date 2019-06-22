@@ -1,22 +1,81 @@
-# CSS 3d Layered Image
-## 2019/6/19
-鼠标hover出现特效  
-```
-// 使用skew产生形变
-transform: rotate(-30deg) skew(25deg) scale(.8); 
-// 添加4层layer，分别在hover的时候tranform就行了
-``` 
-![effect](./images/3d-layered.png "效果")
+# Responsive Design
 
+## 2019/6/21
+
+响应式卡片
+
+<img src="images/responsive design.png" width="100%">
+
+```css
+/* 图片使用绝对定位 */
+/* 使用odd 和 even 调整图片的位置 */
+.container .box:nth-child(odd) .thumb {
+  bottom: 0;
+}
+.container .box:nth-child(even) .details {
+  bottom: 0;
+}
+```
+### 响应式部分
+```
+@media (max-width: 1000px) {
+  .container {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  .container .box {
+    height: 250px;
+  }
+}
+```
+<img src="images/responsive design1.png" width="100%">
+
+```
+@media (max-width: 768px) {
+  .container {
+    flex-wrap: wrap;
+  }
+
+  .container .box {
+    flex-basis: 50%;
+    transition: transform 1s;
+  }
+}
+```
+<img src="images/responsive design2.png" width="100%">
+
+```
+@media (max-width: 500px) {
+  .container .box {
+    flex-basis: 100%;
+  }
+}
+```
+<img src="images/responsive design3.png" width="100%">
+# CSS 3d Layered Image
+
+## 2019/6/19
+
+鼠标 hover 出现特效
+
+```css
+/* 使用skew产生形变 */
+transform: rotate(-30deg) skew(25deg) scale(0.8);
+/* 添加4层layer，分别在hover的时候tranform就行了 */
+```
+
+<img src="images/3d-layered.png" width="100%">
 
 # Thanos Snap Disperison
+
 ## 2019/6/18
-灭霸响指消失特效（有点low）   
 
+灭霸响指消失特效（有点 low）
+
+```css
+/* 原理就是使用一张noise.png的噪点图覆盖原图 */
 ```
-原理就是使用一张noise.png的噪点图覆盖原图
-```
 
-![effect](./images/thanos-dispersion.png "变成灰")
-
-
+<img src="images/thanos-dispersion.png" width="100%">
